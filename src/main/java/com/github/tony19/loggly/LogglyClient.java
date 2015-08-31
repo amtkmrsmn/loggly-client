@@ -31,8 +31,8 @@ import retrofit.mime.TypedString;
 public class LogglyClient implements ILogglyClient {
     private static final String API_URL = "http://logs-01.loggly.com/";
     private ILogglyRestService loggly;
-    private String token;
-    static String tags = "android";
+    private final String token;
+    private String tags;
 
     /**
      * Creates a Loggly client
